@@ -9,8 +9,8 @@ class token {
 
 function getTokenInfoByName(tokenName) {
   var result = null
-  const sheetValues = getAllValuesFromSheet("DB_TOKEN")
   const tokens = []
+  const sheetValues = getAllValuesFromSheet("DB_TOKEN")
   for (i in sheetValues) {
     tokens.push(new token(sheetValues[i][0], sheetValues[i][1], sheetValues[i][2], sheetValues[i][3]))
   }
