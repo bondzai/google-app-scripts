@@ -1,4 +1,3 @@
-//==================================================================================
 function getTokenBalanceBEP20(tokenName, walletName) {
   var token = getTokenInfoByName(tokenName)
   var wallet = getWalletInfoByName(walletName)
@@ -11,6 +10,7 @@ function getTokenBalanceBEP20(tokenName, walletName) {
   console.log(balance)
   return balance
 }
+
 function getURLtokenBalanceBEP20(tokenAddress, walletAddress) {
   var apiKey = getApiKeyByName("Binance")
   var url = ""
@@ -23,9 +23,7 @@ function getURLtokenBalanceBEP20(tokenAddress, walletAddress) {
   url = urlPart.head + urlPart.tokenAddress + urlPart.walletAddress + urlPart.tail
   return url
 }
-//==================================================================================
 
-//==================================================================================
 function getTokenTotalSupplyBEP20(tokenName) {
   var token = getTokenInfoByName(tokenName)
   var url = getURLtokenTotalSupplyBEP20(token.address)
@@ -47,4 +45,3 @@ function getURLtokenTotalSupplyBEP20(tokenAddress) {
   url = urlPart.head + urlPart.tokenAddress + urlPart.tail
   return url
 }
-//==================================================================================
