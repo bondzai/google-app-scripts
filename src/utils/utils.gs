@@ -30,7 +30,7 @@ const sendHttpGetRequest = (url) => {
             muteHttpExceptions: true,
         });
     } catch (e) {
-        endLineNotifyMessage(
+        sendLineNotifyMessage(
             url + response.getResponseCode(`Error: ${e.message}`)
         );
     }
